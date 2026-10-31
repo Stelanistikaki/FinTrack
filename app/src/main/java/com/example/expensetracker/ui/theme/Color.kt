@@ -20,4 +20,3 @@ val CategoryHealth = Color(0xFF10B981)
 val CategoryOther = Color(0xFF64748B)
 
 val ExpenseRed = Color(0xFFEF4444)
-val IncomeGreen = Color(0xFF10B981)

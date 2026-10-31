@@ -19,10 +19,10 @@ object DatabaseModule {
     @Singleton
     fun provideDatabase(@ApplicationContext context: Context): ExpenseDatabase {
         return Room.databaseBuilder(
-            context,
-            ExpenseDatabase::class.java,
-            "expense_tracker_db"
-        ).fallbackToDestructiveMigration().build()
+                context,
+                ExpenseDatabase::class.java,
+                "expense_tracker_db"
+            ).fallbackToDestructiveMigration(false).build()
     }
 
     @Provides
